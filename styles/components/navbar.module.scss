@@ -5,6 +5,7 @@
 .toggleClickTrue{
   width: 25px;
   height: 25px;
+  pointer-events: all;
   @include keyframes(rotateLeft){
     100% {
       transform: rotate(-360deg);
@@ -15,6 +16,7 @@
 .toggleClickFalse{
   width: 25px;
   height: 25px;
+  pointer-events: all;
   @include keyframes(rotateRight){
     100% {
       transform: rotate(360deg);
@@ -81,7 +83,6 @@
   }
   .show {
     transform: translateX(0);
-    
   }
   .hide {
     transform: translateX(100%);
@@ -95,6 +96,12 @@
   }
   .links:visited{
     color: white;
+  }
+  .showed {
+    pointer-events: auto;
+  }
+  .hided {
+    pointer-events: none;
   }
 }
 

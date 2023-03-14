@@ -13,7 +13,7 @@ const NavBar = () => {
   }
 
   return (
-    <header className={navbar.header}>
+    <header className={`${navbar.header} ${isShown ? navbar.showed : navbar.hided}`}>
       <div className={navbar.container}>
       <button className={navbar.toggle} onClick={toggleShown}>
         <BsGearWideConnected
