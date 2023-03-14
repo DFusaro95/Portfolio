@@ -1,0 +1,33 @@
+@import '../variables.module.scss';
+@import '../mixins';
+
+.body {
+  color: $letterColor;
+  span {
+    color: $spanColor1;
+  }
+  font-family: $fontFamily1
+}
+.imgContainer {
+  display: flex;
+}
+.img {
+  @include imgSize(100%, 100%);
+}
+
+@include mobile {
+  .span {
+    font-family: $fontFamily2;
+    font-size: 35px;
+    @include keyframes(spark){
+      0%{
+        color: $spanColor1;
+      }
+      100%{
+        color: $spanColor2;
+      }
+    }
+    @include animate(spark, .6s, infinite, linear, alternate)
+  }
+  
+}

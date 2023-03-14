@@ -1,0 +1,32 @@
+@mixin mobile{
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin animate($animation, $duration, $iteration, $method, $direction){
+  animation: $animation $duration $iteration $method $direction;
+}
+
+@mixin keyframes($name){
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin imgSize($width, $height) {
+  width: $width;
+  height: $height;
+}
