@@ -1,6 +1,41 @@
 @import '../variables.module.scss';
 @import  '../mixins';
 
+.global {
+  font-family: $fontFamily1;
+  color: $letterColor;
+  a {
+    color: $spanColor1;
+  }
+}
 .img {
-  @include imgSize(90vw, 30vh);
+  @include imgSize(90vw, 32vh);
+
+}
+.shadow {
+  box-shadow: 0px 0px 20px 5px $spanColor1;
+  border-radius: 6px;
+}
+
+@include mobile {
+  .global{
+    display: flex;
+    flex-direction: column;
+    h2:nth-child(1){
+      margin: 10px;
+    }
+  }
+  .sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    p {
+      font-family: $fontFamily2;
+      margin: 10px 5px;
+    }
+  }
+  
 }

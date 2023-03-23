@@ -14,6 +14,33 @@
 .img {
   @include imgSize(100%, 100%);
 }
+.dynamicTextContainer {
+  display: flex;
+  margin: 15px 0;
+  font-size: 25px;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+.dynamic{
+  display: flex;
+  flex-direction: column;
+  font-family: $fontFamily2;
+  font-size: 35px;
+  line-height: 45px;
+  overflow: hidden;
+  height: 40px;
+}
+.dynamic li {
+  position: relative;
+  top: 0;
+  @include animate(slide, 12s, steps(4), infinite, normal);
+}
+@include keyframes(slide){
+  100%{
+    top: -180px;
+  }
+}
 
 @include mobile {
   .span {
@@ -29,5 +56,61 @@
     }
     @include animate(spark, .6s, infinite, linear, alternate)
   }
-  
+
+  .btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+  .linksBtn {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  }
+  .tgBg {
+    background-color: $telegram;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ghBg {
+    background-color: $github;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ldiBg{
+    background-color: $linkedin;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .emBg{
+    background-color: $mail;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .linkColor{
+    color: $letterColor;
+    padding-top: 10px;
+  }
 }

@@ -11,19 +11,50 @@ const HomePage = () => {
         <span className={style.span}>Welcome</span> to my Porfolio!
       </h1>
       <section>
-        <h2>My name is 
+        <h2>My name is
           <span className={style.span}> Diego Fusaro</span>
         </h2>
-        <h2>I develop: 
-          <span className={style.span}>Webs</span>
-          <span className={style.span}>Web Apps</span>
-          <span className={style.span}>Landing Pages</span>
-          <span className={style.span}>Software</span>
-        </h2>
-        <div><button><Link href='https://www.github.com/DFusaro95' target='_blank'><BsGithub /></Link></button></div>
-        <div><button><Link href='https://t.me/TheOneToBlame' target='_blank'><BsTelegram /></Link></button></div>
-        <div><button><Link href='https://www.linkedin.com/in/diego-fusaro-' target='_blank'><BsLinkedin /></Link></button></div>
-        <div><button><Link href="mailto:diefusaro@gmail.com?subject=I'm interested on your services as a web developer&body=Hello Diego, I was checking your portfolio and found it very interesting. Would you mind if we have an inteview?" target='_blank'><BsMailbox2 /></Link></button></div>
+        <div className={style.dynamicTextContainer}>
+          <div>
+            I develop:
+          </div>
+          <ul className={style.dynamic}>
+            <li><span> Webs</span></li>
+            <li><span> Web Apps</span></li>
+            <li><span> Landing Pages</span></li>
+            <li><span> Software</span></li>
+          </ul>
+        </div>
+        <article className={style.btnContainer}>
+          <div className={style.ghBg}>
+            <button className={style.linksBtn}>
+              <Link href='https://www.github.com/DFusaro95' target='_blank'>
+                <BsGithub className={style.linkColor} />
+              </Link>
+            </button>
+          </div>
+          <div className={style.tgBg}>
+            <button className={style.linksBtn}>
+              <Link href='https://t.me/TheOneToBlame' target='_blank'>
+                <BsTelegram className={style.linkColor} />
+              </Link>
+            </button>
+          </div>
+          <div className={style.ldiBg}>
+            <button className={style.linksBtn}>
+              <Link href='https://www.linkedin.com/in/diego-fusaro-' target='_blank'>
+                <BsLinkedin className={style.linkColor} />
+              </Link>
+            </button>
+          </div>
+          <div className={style.emBg}>
+            <button className={style.linksBtn}>
+              <Link href="mailto:diefusaro@gmail.com?subject=I'm interested on your services as a web developer&body=Hello Diego, I was checking your portfolio and found it very interesting. Would you mind if we have an inteview?" target='_blank'>
+                <BsMailbox2 className={style.linkColor} />
+              </Link>
+            </button>
+          </div>
+        </article>
       </section>
       <section>
         <div className={style.imgContariner}>
