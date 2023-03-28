@@ -34,7 +34,7 @@
 .dynamic li {
   position: relative;
   top: 0;
-  @include animate(slide, 12s, steps(4), infinite, normal);
+  @include animate(slide, 6s, steps(4), infinite, normal);
 }
 @include keyframes(slide){
   100%{

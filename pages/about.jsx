@@ -1,5 +1,6 @@
 import AboutPage from '@/components/about/AboutPage'
 import AboutPageES from '@/components/about/AboutPageES'
+import FooterSection from '@/components/shared/FooterSection'
 import LangBtn from '@/components/shared/LangBtn'
 import PageHead from '@/components/shared/PageHead'
 
@@ -16,6 +17,7 @@ const about = () => {
       {
         isEnglish ? <AboutPage /> : <AboutPageES />
       }
+      <FooterSection />
     </div>
   )
 }

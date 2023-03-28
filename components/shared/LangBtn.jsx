@@ -9,11 +9,15 @@ const LangBtn = ({isEnglish, setIsEnglish }) => {
   }
 
   return (
+    <section className={style.global}>
     <button className={style.btn} onClick={toogleLang}>
         {
-          isEnglish ? <Image src={'/../public/españa.png'} width={50} height={25} /> : <Image src={'/../public/british.png'} width={50} height={25} />
+          isEnglish ? 
+          <Image className={style.img} src={'/../public/españa.png'} width={50} height={25} /> : 
+          <Image className={style.img} src={'/../public/british.png'} width={50} height={25} />
         }
       </button>
+    </section>
   )
 }
 

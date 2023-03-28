@@ -1,3 +1,4 @@
+import FooterSection from '@/components/shared/FooterSection'
 import LangBtn from '@/components/shared/LangBtn'
 import PageHead from '@/components/shared/PageHead'
 import WorkPage from '@/components/work/WorkPage'
@@ -16,6 +17,7 @@ const work = () => {
       {
         isEnglish ? <WorkPage /> : <WorkPageES />
       }
+      <FooterSection />
     </div>
   )
 }

@@ -1,0 +1,13 @@
+@import '../variables.module.scss';
+
+.global {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-family: $fontFamily1;
+  font-size: $fontSize1;
+  color: $letterColor;
+}
+

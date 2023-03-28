@@ -1,0 +1,19 @@
+@import '../variables.module.scss';
+@import '../mixins';
+
+.global {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.principal{
+  color: $spanColor1;
+  font-family: $fontFamily1;
+}
+
+.secondary{
+  color: $letterColor;
+  font-family: $fontFamily2;
+}

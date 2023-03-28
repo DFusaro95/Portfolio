@@ -1,0 +1,59 @@
+@import '../mixins';
+@import '../variables.module.scss';
+
+
+.global {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr 3fr;
+  height: 50vh;
+}
+
+.title {
+  margin: 30px 20px auto;
+  color: $spanColor1;
+  font-family: $fontFamily1;
+  font-size: $fontSize3;
+}
+
+.btnContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ghBg {
+  background-color: $github;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tgBg {
+  background-color: $telegram;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ldiBg {
+  background-color: $linkedin;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emBg {
+  background-color: $mail;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

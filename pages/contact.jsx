@@ -1,5 +1,6 @@
 import ContactPage from '@/components/contact/ContactPage'
 import ContactPageES from '@/components/contact/ContactPageES'
+import FooterSection from '@/components/shared/FooterSection'
 import LangBtn from '@/components/shared/LangBtn'
 import PageHead from '@/components/shared/PageHead'
 
@@ -16,6 +17,7 @@ const contact = () => {
       {
         isEnglish ? <ContactPage /> : <ContactPageES />
       }
+      <FooterSection />
     </div>
   )
 }

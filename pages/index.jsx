@@ -10,6 +10,7 @@ import AboutPageES from '@/components/about/AboutPageES'
 import ContactPageES from '@/components/contact/ContactPageES'
 import LangBtn from '@/components/shared/LangBtn'
 import style from '../styles/pages/index.module.scss'
+import FooterSection from '@/components/shared/FooterSection'
 
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
       {
         isEnglish ? <ContactPage /> : <ContactPageES />
       }
-
+      <FooterSection />
     </article>
   )
 }
