@@ -16,13 +16,13 @@ const HomePage = () => {
         </h2>
         <div className={style.dynamicTextContainer}>
           <div>
-            I develop:
+            I develop: 
           </div>
           <ul className={style.dynamic}>
-            <li><span> Webs</span></li>
-            <li><span> Web Apps</span></li>
-            <li><span> Landing Pages</span></li>
-            <li><span> Software</span></li>
+            <li><span className={style.colorTwo}> Webs</span></li>
+            <li><span className={style.colorOne}> Web Apps</span></li>
+            <li><span className={style.colorTwo}> Landing Pages</span></li>
+            <li><span className={style.colorOne}> Software</span></li>
           </ul>
         </div>
         <article className={style.btnContainer}>
@@ -49,24 +49,12 @@ const HomePage = () => {
           </div>
           <div className={style.emBg}>
             <button className={style.linksBtn}>
-              <Link href="mailto:diefusaro@gmail.com?subject=I'm interested on your services as a web developer&body=Hello Diego, I was checking your portfolio and found it very interesting. Would you mind if we have an inteview?" target='_blank'>
+              <Link href="mailto:diefusaro@gmail.com?subject=I'm interested on your services as a software engineer&body=Hello Diego, I was checking your portfolio and found it very interesting. Would you mind if we have an inteview?" target='_blank'>
                 <BsMailbox2 className={style.linkColor} />
               </Link>
             </button>
           </div>
         </article>
-      </section>
-      <section>
-        <div className={style.imgContariner}>
-          <Image
-            className={style.img}
-            alt='Profile picture of a man with a winter hat and a black shirt, the picture has a black and white filter'
-            src={'/../public/home__img1.png'}
-            width={300}
-            height={400}
-          />
-
-        </div>
       </section>
     </main>
   )

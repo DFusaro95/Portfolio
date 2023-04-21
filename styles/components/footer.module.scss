@@ -1,4 +1,5 @@
 @import '../variables.module.scss';
+@import '../mixins';
 
 .global {
   display: flex;
@@ -11,3 +12,8 @@
   color: $letterColor;
 }
 
+@include tablet() {
+  .global{
+    font-size: 1.5rem;
+  }
+}

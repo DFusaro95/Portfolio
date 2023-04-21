@@ -11,9 +11,19 @@
 .principal{
   color: $spanColor1;
   font-family: $fontFamily1;
+  
 }
 
 .secondary{
   color: $letterColor;
   font-family: $fontFamily2;
+  
+}
+@include tablet() {
+  .principal{
+    font-size: 3rem;
+  }
+  .secondary{
+    font-size: 2rem;
+  }
 }

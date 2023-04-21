@@ -3,24 +3,28 @@
 
 .body {
   color: $letterColor;
-  span {
-    color: $spanColor1;
-  }
-  font-family: $fontFamily1
+  font-family: $fontFamily1;
+  width: 100%;
 }
 .imgContainer {
   display: flex;
 }
 .img {
-  @include imgSize(100%, 100%);
+  @include imgSize(75%, 100%);
+}
+.colorOne {
+  color: $spanColor2; 
+}
+.colorTwo {
+  color: $spanColor1;
 }
 .dynamicTextContainer {
   display: flex;
-  margin: 15px 0;
+  margin: 0px auto;
   font-size: 25px;
-  gap: 10px;
   align-items: center;
   font-weight: bold;
+  justify-content: center;
 }
 .dynamic{
   display: flex;
@@ -42,7 +46,21 @@
   }
 }
 
+.linksBtn {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+}
+
 @include mobile {
+  .body {
+    text-align: center;
+  }
   .span {
     font-family: $fontFamily2;
     font-size: 35px;
@@ -64,14 +82,6 @@
     align-items: center;
     width: 100%;
     height: 100px;
-  }
-  .linksBtn {
-    background-color: rgba(255, 255, 255, 0);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
   }
   .tgBg {
     background-color: $telegram;
@@ -112,5 +122,113 @@
   .linkColor{
     color: $letterColor;
     padding-top: 10px;
+  }
+}
+
+@include tablet() {
+  .body {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .span {
+    font-family: $fontFamily2;
+    font-size: 3.5rem;
+    @include keyframes(spark){
+      0%{
+        color: $spanColor1;
+      }
+      100%{
+        color: $spanColor2;
+      }
+    }
+    @include animate(spark, .6s, infinite, linear, alternate)
+  }
+
+  .btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+  .tgBg {
+    background-color: $telegram;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease;
+  }
+  .tgBg:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    transition: transform .5s ease;
+  }
+  .ghBg {
+    background-color: $github;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease;
+  }
+  .ghBg:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    transition: transform .5s ease;
+  }
+  .ldiBg{
+    background-color: $linkedin;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease;
+  }
+  .ldiBg:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    transition: transform .5s ease;
+  }
+  .emBg{
+    background-color: $mail;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease;
+  }
+  .emBg:hover{
+    transform: scale(1.5);
+    z-index: 2;
+    transition: transform .5s ease;
+  }
+  .linkColor{
+    color: $letterColor;
+    padding-top: 10px;
+  }
+  .dynamicTextContainer {
+    margin: 25px;
+    font-size: 3rem;
+  }
+  .dynamic{
+    font-size: 4rem;
+    line-height: 50px;
+    gap: 20px;
+    height: 60px;
+  }
+  @include keyframes(slide){
+    100%{
+      top: -280px;
+    }
   }
 }

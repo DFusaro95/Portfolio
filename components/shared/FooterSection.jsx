@@ -6,7 +6,7 @@ import footer from '../../styles/components/footer.module.scss'
 const FooterSection = () => {
   return (
     <div className={footer.global}>
-      This page is made with 
+      This page was made with 
       <div>
         <TbBrandNextjs />NextJS<TbBrandNextjs />
       </div> 

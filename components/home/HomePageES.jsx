@@ -19,10 +19,10 @@ const HomePageES = () => {
           Desarrollo: 
         </div>
         <ul className={style.dynamic}>
-            <li><span> Webs</span></li>
-            <li><span> Web Apps</span></li>
-            <li><span> Landing Pages</span></li>
-            <li><span> Software</span></li>
+            <li><span className={style.colorTwo}> Webs</span></li>
+            <li><span className={style.colorOne}> Web Apps</span></li>
+            <li><span className={style.colorTwo}> Landing Pages</span></li>
+            <li><span className={style.colorOne}> Software</span></li>
           </ul>
       </div>
       <article className={style.btnContainer}>
