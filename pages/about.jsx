@@ -6,7 +6,7 @@ import PageHead from '@/components/shared/PageHead'
 
 import React, { useState } from 'react'
 
-const about = () => {
+const About = () => {
 
   const [isEnglish, setIsEnglish] = useState(true)
 
@@ -22,4 +22,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

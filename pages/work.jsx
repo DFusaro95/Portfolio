@@ -6,7 +6,7 @@ import WorkPageES from '@/components/work/WorkPageES'
 
 import React, { useState } from 'react'
 
-const work = () => {
+const Work = () => {
 
   const [isEnglish, setIsEnglish] = useState(true)
 
@@ -22,4 +22,4 @@ const work = () => {
   )
 }
 
-export default work
+export default Work

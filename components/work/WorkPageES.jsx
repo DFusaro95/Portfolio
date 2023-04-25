@@ -20,6 +20,7 @@ const WorkPageES = () => {
               src={'/../public/pokedex-pc.jpg'}
               width={600}
               height={400}
+              alt='Una imagen del proyecto a color y en alta calidad'
             />
           </Link>
           <section>
@@ -43,6 +44,7 @@ const WorkPageES = () => {
               src={'/../public/alma-pc.jpg'}
               width={600}
               height={400}
+              alt='Una imagen del proyecto a color y en alta calidad'
             />
           </Link>
           <section>
@@ -65,10 +67,11 @@ const WorkPageES = () => {
               src={'/../public/rym-pc.jpg'}
               width={600}
               height={400}
+              alt='Una imagen del proyecto a color y en alta calidad'
             />
           </Link>
           <section>
-            <h2>Rick and Morty's Character finder</h2>
+            <h2>Rick and Morty&#39;s Character finder</h2>
             <p>
               Ésta es una aplicación que te permite buscar todas las locaciones y sus respectivos personajes de la serie Rick y Morty. Fue hecha desde cero con React y CSS vanilla. Consume la API de Rick y Morty con la librería Axios. Realicé todo el Front-End y el desafío mas difícil fué realizar el input controlado en la barra de busqueda.
             </p>
@@ -89,6 +92,7 @@ const WorkPageES = () => {
               src={'/../public/weather-pc.jpg'}
               width={600}
               height={400}
+              alt='Una imagen del proyecto a color y en alta calidad'
             />
           </Link>
           <section>
@@ -113,6 +117,7 @@ const WorkPageES = () => {
               src={'/../public/crud-pc.jpg'}
               width={600}
               height={400}
+              alt='Una imagen del proyecto a color y en alta calidad'
             />
           </Link>
           <section>

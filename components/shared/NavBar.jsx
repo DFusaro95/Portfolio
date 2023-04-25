@@ -23,9 +23,9 @@ const NavBar = () => {
       <div className={`${navbar.linksContainer} ${isShown ? navbar.show : navbar.hide}`}>
         <ul className={navbar.links}>
           <Link href={'/'} onClick={toggleShown}>Home</Link>
-          <Link href={'/contact'} onClick={toggleShown}>Contact</Link>
-          <Link href={'/work'} onClick={toggleShown}>Work</Link>
-          <Link href={'/about'} onClick={toggleShown}>About</Link>
+          <Link href={'/Contact'} onClick={toggleShown}>Contact</Link>
+          <Link href={'/Work'} onClick={toggleShown}>Work</Link>
+          <Link href={'/About'} onClick={toggleShown}>About</Link>
         </ul>
       </div>
       </div>
