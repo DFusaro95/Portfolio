@@ -56,17 +56,6 @@ const HomePageES = () => {
           </div>
         </article>
     </section>
-    <section>
-        <div className={style.imgContariner}>
-          <Image
-            className={style.img}
-            alt='Profile picture of a man with a winter hat and a black shirt, the picture has a black and white filter'
-            src={'/../public/home__img1.png'}
-            width={300}
-            height={400}
-          />
-        </div>
-      </section>
   </main>
   )
 }

@@ -17,7 +17,7 @@ const WorkPage = () => {
           <Link href={'https://pokeapi-df.netlify.app'} target='_blank' className={work.shadow}>
             <Image
               className={work.img}
-              src={'/../public/pokedex-pc.jpg'}
+              src={'/../pokedex-pc.jpg'}
               width={600}
               height={400}
               alt='An image of the project full color and high quality'
@@ -41,7 +41,7 @@ const WorkPage = () => {
           <Link href={'https://alma-shuryah.netlify.app'} target='_blank' className={work.shadow}>
             <Image
               className={work.img}
-              src={'/../public/alma-pc.jpg'}
+              src={'/../alma-pc.jpg'}
               width={600}
               height={400}
               alt='An image of the project full color and high quality'
@@ -64,7 +64,7 @@ const WorkPage = () => {
           <Link href={'https://rick-and-morty-app-df.netlify.app'} target='_blank' className={work.shadow}>
             <Image
               className={work.img}
-              src={'/../public/rym-pc.jpg'}
+              src={'/../rym-pc.jpg'}
               width={600}
               height={400}
               alt='An image of the project full color and high quality'
@@ -87,7 +87,7 @@ const WorkPage = () => {
           <Link href={'https://weather-app-df.netlify.app'} target='_blank' className={work.shadow}>
             <Image
               className={work.img}
-              src={'/../public/weather-pc.jpg'}
+              src={'/../weather-pc.jpg'}
               width={600}
               height={400}
               alt='An image of the project full color and high quality'
@@ -110,7 +110,7 @@ const WorkPage = () => {
           <Link href={'https://crud-user-cards-df.netlify.app'} target='_blank' className={work.shadow}>
             <Image
               className={work.img}
-              src={'/../public/crud-pc.jpg'}
+              src={'/../crud-pc.jpg'}
               width={600}
               height={400}
               alt='An image of the project full color and high quality'
